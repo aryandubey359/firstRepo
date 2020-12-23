@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Home Page</title>
+    <link rel="stylesheet" href="../CSS/Website Style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Food Ordering Website</h1>
+        <h5 style="text-align: center;">Developed and maintained by Aryan D.</h5>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Restaurants</a>
+        <a href="#">Order Food</a>
+        <a href="#">Reservations</a>
+        <a href="#">Recipes</a>
+        <a href="#">Login/Signup</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Restaurants</h2>
+            <img src="../Material/Food_1.jpg" alt="" width="33%"><h4>Annie's Burger Place</h4>
+            <img src="../Material/Food_2.jpg" alt="" width="33%"><h4>Rajdhani Thali</h4>
+            <img src="../Material/Food_3.jfif" alt="" width="33%"><h4>Peetza Palaz</h4>
+            <br><br><br>
+            <img src="../Material/Food_4.jpeg" alt="" width="33%"><h4>Chocolate Bounty</h4>
+            <img src="../Material/Food_5.jpg" alt="" width="33%"><h4>Ice Cream Overload</h4>
+            <img src="../Material/Food_6.jpg" alt="" width="33%"><h4>Australian Waffles Inc</h4>
+        </section>
+        <section style="background: papayawhip;">
+            <h2>Order Food</h2>
+            <form action="">
+                <h3 style="text-align: center;">Customer Registration</h3>
+                <p>All fields are required *.</p>
+                <fieldset>
+                    <p>Name:* <input type="text" name="name" id="name" required></p>
+                    <p>Contact:* <input type="number" name="contact" id="contact"></p>
+                    <p>Address:* <textarea name="address" id="address" cols="30" rows="10"></textarea></p>
+                    <p>
+                        Restaurant:* 
+                        <select name="restaurant" id="restaurant" required>
+                            <option value="">--Select a Restaurant</option>
+                            <option value="burger">Annie's Burger Place</option>
+                            <option value="thali">Rajdhani Thali</option>
+                            <option value="pizza">Peetza Palaz</option>
+                            <option value="brownie">Chocolate Bounty</option>
+                            <option value="icecream">Ice Cream Overload</option>
+                            <option value="waffles">Australian Waffles Inc</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="submit" value="Proceed to Order">
+                        <input type="reset" value="Reset">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2 style="text-align: center;">Make Reservation</h2>
+            <h3 style="text-align: center;">Customer Details</h3>
+            <p>All fields are required *.</p>
+            <form action="">
+                <fieldset>
+                    <p>Name:* <input type="text" name="name" id="name" required></p>
+                    <p>Contact:* <input type="number" name="reservationcontact" id="reservationcontact" required></p>
+                    <p>
+                        Restaurant:* 
+                        <select name="reservationrestaurant" id="reservationrestaurant" required>
+                            <option value="">--Select a Restaurant</option>
+                            <option value="burger">Annie's Burger Place</option>
+                            <option value="thali">Rajdhani Thali</option>
+                            <option value="pizza">Peetza Palaz</option>
+                            <option value="brownie">Chocolate Bounty</option>
+                            <option value="icecream">Ice Cream Overload</option>
+                            <option value="waffles">Australian Waffles Inc</option>
+                        </select>
+                    </p>
+                    <p>No of people:* <input type="number" name="noofpeople" id="noofpeople"required></p>
+                    <p>Date:* <input type="date" name="reservationdate" id="reservationdate" required></p>
+                    <p>Time:* <input type="time" name="reservationtime" id="reservationtime" required></p>
+                    <p>
+                        <input type="submit" value="Confirm Reservation">
+                        <input type="reset" value="Reset">
+                    </p>                           
+                </fieldset>
+            </form>            
+        </section>
+        <section style="background: papayawhip;">
+            <h2>Some Easy Recipes</h2>
+            <p style="text-align: center;"><i><b> These are some easy video recipes which you can easily follow and make delicious food at your home once in a while. </b></i></p>
+            <iframe src="https://www.youtube.com/embed/Eq9zxTfCd7w" frameborder="0" width="30%" height="30%" controls></iframe>
+            <iframe src="https://www.youtube.com/embed/1vQYLE_C8Gs" frameborder="0" width="30%" height="30%" controls></iframe>
+            <iframe src="https://www.youtube.com/embed/PmNtyk8pVRE" frameborder="0" width="30%" height="30%" controls></iframe>
+        </section>
+        <section>
+            <h2 style="text-align: center;">Login</h2>
+            <form action="">
+                <fieldset>
+                    <p>Email:* <input type="email" name="email" id="email" required></p>
+                    <p>Password:* <input type="password" name="password" id="password" required></p>
+                    <p>
+                        <input type="submit" value="Login">
+                        <input type="reset" value="Reset">
+                    </p>
+                    <a href="#">New to the website Sign up!</a>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2 style="text-align: center;">Sign up</h2>
+            <form action="">
+                <fieldset>
+                    <p>Name:* <input type="text" name="name" id="name" required></p>
+                    <p>Contact:* <input type="number" name="contact" id="contact" required></p>
+                    <p>Email:* <input type="email" name="email" id="email" required></p>
+                    <p>Address:* <textarea name="address" id="address" cols="30" rows="10" required></textarea></p>
+                    <p>Pincode:* <input type="number" name="pincode" id="pincode" required></p>
+                    <p>Password:* <input type="password" name="password" id="password" required></p>
+                    <p>Confirm Password:* <input type="password" name="password" id="password" required></p>
+                    <p>
+                        <input type="submit" value="Create Account">
+                        <input type="reset" value="Reset">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Reviews and Feedback</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">&copy; 2020 | Aryan D.</a>
+        </nav> 
+    </footer>
+</body>
+</html>
