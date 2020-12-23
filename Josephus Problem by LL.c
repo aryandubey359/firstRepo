@@ -77,6 +77,7 @@ void jos(int j)
 }
 int main()
 {
+    printf("\nJust a temporary change for learning git bash.");
     create();
     display();
     jos(players);
